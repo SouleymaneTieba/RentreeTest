@@ -35,9 +35,9 @@ export default function Header() {
           
           {/* Actions */}
           <div className="flex items-center gap-3">
-            <Link to="/paiement" className="p-2.5 rounded-full hover:bg-primary/10 transition-colors relative">
+            <Link to="/panier" className="p-2.5 rounded-full hover:bg-primary/10 transition-colors relative">
               <span className="material-symbols-outlined">shopping_cart</span>
-              <span className="absolute top-1 right-1 bg-primary text-white text-[10px] font-bold px-1.5 rounded-full">3</span>
+              <span className="absolute top-1 right-1 bg-primary text-white text-[10px] font-bold px-1.5 rounded-full">0</span>
             </Link>
             <Link to="/connexion" className="p-2.5 rounded-full hover:bg-primary/10 transition-colors">
               <span className="material-symbols-outlined">person</span>
