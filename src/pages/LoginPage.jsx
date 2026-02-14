@@ -3,11 +3,17 @@ import { Link } from 'react-router-dom';
 export default function LoginPage() {
   return (
     <div className="min-h-screen bg-background-light flex items-center justify-center px-4">
+      {/* Back to home link */}
+      <Link to="/" className="absolute top-4 left-4 flex items-center gap-2 text-primary font-semibold hover:underline">
+        <span className="material-symbols-outlined">arrow_back</span>
+        Retour à l'accueil
+      </Link>
+
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
           <Link to="/">
             <img 
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIQEWh7B72v3AhC6oJEDy9Mts4tN-e6FfZg9NKkrajIAEotZ9tDMUJmXB5rH0S-TMoz3BMguex2WpZE8OEMuV7lao0IAO6rq_tyZ25BbZEB0FtOKmXPyWqVWmeNwYu5bGian6PtezrY46kYyHfiAeydrwYP0Hhzw7-V3E_FYTG-A5bWrQ0yjiUORNfSJke5NJ1xZva4aMdsU8Isf719BX5omxuh24OXbftHkulZDWBgOygzWq2hHMUlZj0w3aUVIHPZa_dR-sKfuM" 
+              src="/src/assets/logo_marentreefacile.png" 
               alt="MaRentreeFacile" 
               className="h-16 mx-auto mb-4"
             />

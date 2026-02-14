@@ -5,6 +5,7 @@ import CataloguePage from './pages/CataloguePage';
 import KitsPage from './pages/KitsPage';
 import ProductDetailPage from './pages/ProductDetailPage';
 import LoginPage from './pages/LoginPage';
+import RegisterPage from './pages/RegisterPage';
 import CartPage from './pages/CartPage';
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/connexion" element={<LoginPage />} />
-        <Route path="/inscription" element={<LoginPage />} />
+        <Route path="/inscription" element={<RegisterPage />} />
         <Route path="/paiement" element={<CartPage />} />
         <Route path="/panier" element={
           <>
