@@ -19,7 +19,7 @@ export default function LandingPage() {
   return (
     <div className="bg-background-light">
       {/* Hero Section */}
-      <section className="relative h-[600px] w-full flex items-center overflow-hidden">
+      <section className="relative h-[400px] md:h-[500px] lg:h-[600px] w-full flex items-center overflow-hidden py-12 lg:py-0">
         <div className="absolute inset-0 z-0">
           <img 
             className="w-full h-full object-cover" 
@@ -32,7 +32,7 @@ export default function LandingPage() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="max-w-2xl">
             <span className="inline-block px-4 py-1.5 rounded-full bg-primary/20 text-primary font-bold text-sm mb-6 backdrop-blur-sm border border-primary/30 uppercase tracking-widest bg-secondary-green/20 text-secondary-green border-secondary-green/30">Édition Rentrée 2026</span>
-            <h1 className="text-5xl md:text-7xl font-extrabold text-white leading-[1.1] mb-6 tracking-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold text-white leading-[1.1] mb-4 md:mb-6 tracking-tight">
               Préparez la Rentrée <span className="text-primary italic">en un Clic !</span>
             </h1>
             <p className="text-lg md:text-xl text-slate-200 mb-10 max-w-lg leading-relaxed">

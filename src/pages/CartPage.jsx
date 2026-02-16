@@ -345,7 +345,7 @@ export default function CartPage() {
                       </div>
                       <div className="flex-1 min-w-0">
                         <p className="font-medium text-sm truncate">{item.name}</p>
-                        <p className="text-xs text-slate-500">Edition 2024</p>
+                        <p className="text-xs text-slate-500">Edition 2026</p>
                       </div>
                       <span className="font-bold text-sm text-slate-700">{(item.price * item.quantity).toLocaleString()} F</span>
                     </div>
@@ -417,7 +417,7 @@ export default function CartPage() {
           <span className="material-symbols-outlined">shield</span>
         </div>
         <p className="text-xs text-slate-500">
-          © 2024 MaRentreeFacile. Tous droits réservés.
+          © 2026 MaRentreeFacile. Tous droits réservés.
         </p>
       </footer>
     </div>
