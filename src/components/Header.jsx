@@ -1,8 +1,11 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../assets/logo_marentreefacile.png';
+import { useCart } from '../CartContext';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { count } = useCart();
 
   return (
     <header className="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-md border-b border-primary/10">
@@ -13,7 +16,7 @@ export default function Header() {
             <img 
               alt="MaRentreeFacile Logo" 
               className="h-10 lg:h-12 w-auto" 
-              src="/src/assets/logo_marentreefacile.png"
+              src={logo}
             />
           </Link>
           
@@ -40,7 +43,7 @@ export default function Header() {
           <div className="flex items-center gap-1 lg:gap-3">
             <Link to="/panier" className="p-2 lg:p-2.5 rounded-full hover:bg-primary/10 transition-colors relative">
               <span className="material-symbols-outlined text-xl lg:text-2xl">shopping_cart</span>
-              <span className="absolute top-0.5 lg:top-1 right-0.5 lg:right-1 bg-primary text-white text-[9px] lg:text-[10px] font-bold px-1 rounded-full">0</span>
+              <span aria-label={`${count} article${count > 1 ? 's' : ''} dans le panier`} className="absolute top-0.5 lg:top-1 right-0.5 lg:right-1 bg-primary text-white text-[9px] lg:text-[10px] font-bold px-1 rounded-full">{count}</span>
             </Link>
             <Link to="/connexion" className="p-2 lg:p-2.5 rounded-full hover:bg-primary/10 transition-colors">
               <span className="material-symbols-outlined text-xl lg:text-2xl">person</span>

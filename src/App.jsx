@@ -8,6 +8,10 @@ import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import CartPage from './pages/CartPage';
 
+function NotFoundPage() {
+  return <main className="min-h-screen grid place-items-center bg-background-light p-6 text-center"><div><h1 className="text-3xl font-bold">Page introuvable</h1><a className="text-primary font-bold hover:underline" href="/">Retour à l'accueil</a></div></main>;
+}
+
 function App() {
   return (
     <BrowserRouter>
@@ -45,6 +49,7 @@ function App() {
             <LandingPage />
           </>
         } />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
   );
